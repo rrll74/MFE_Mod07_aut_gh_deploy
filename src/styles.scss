@@ -1,0 +1,98 @@
+$main-color: #988ef1;
+$seconday-color: lightgray;
+$air: 5px;
+
+.layout-app-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.layout-app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: white;
+  background-color: $main-color;
+  padding: $air;
+  font-size: 2em;
+}
+
+.layout-app-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: $air * 2;
+
+  & > div {
+    margin: $air;
+    padding: $air * 2;
+    border: $main-color solid 1px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.links a {
+  padding: $air;
+  text-decoration: none;
+  color: $main-color;
+  font-weight: bold;
+  background-color: $seconday-color;
+  margin: $air;
+}
+
+.layout-main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-main-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.layout-main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.layout-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pet-card {
+  padding: $air;
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-card img {
+  width: 100px;
+  height: 75px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px $main-color;
+}
+
+.pet-cart-card {
+  padding: $air;
+  display: flex;
+  flex-direction: row;
+}
+
+.pet-cart-card img {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+}
